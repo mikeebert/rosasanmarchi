@@ -1,12 +1,19 @@
 ####The professional site for Rosa SanMarchi
+Viewable at [rosasanmarchi.github.io](http://rosasanmarchi.github.io)
 
-Uses Ruby 2.0. Clone repo and bundle install.
+Site built using [Nanoc](http://nanoc.ws)
 
-Autocompile with: `guard`
+Clone repo and `bundle install`
 
-View at localhost:3000 with: `nanoc view`
+Source files are in the 'content' and 'layout' directories. Run `guard` to
+autocompile to 'output'
 
-- The photo gallery uses [Backbone](http://backbonejs.org) and those
-JavaScript files are in the `output/scripts` directory. 
-- All images are stored in `output/images`
-- Video files are in `output/videos` 
+Run `nanoc view` to view compiled changes at localhost:3000 
+
+The 'output' directory is a sub repo pushed to rosasanmarchi/rosasanmarchi.github.io:master
+
+- Custom compile rules have been added to `Rules` for scripts and
+stylesheets.
+
+- The photo gallery is build using [Backbone](http://backbonejs.org) -
+relevant files are in content/scripts and view/layouts
