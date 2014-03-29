@@ -71,11 +71,11 @@ a {
 }
 
 
-#bio-text a:link, a:visited {
+#main a:link, a:visited {
   color: #89979b;
 }
 
-#bio-text a:hover {
+#main a:hover {
   color: black;
 }
 
