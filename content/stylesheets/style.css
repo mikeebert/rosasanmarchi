@@ -70,13 +70,13 @@ a {
   text-decoration: none;
 }
 
-a:link,
-a:visited {
-  color: #e7e7e7;
+
+#bio-text a:link, a:visited {
+  color: #89979b;
 }
 
-a:hover {
-  color: #f90;
+#bio-text a:hover {
+  color: black;
 }
 
 /*=====================================*/
