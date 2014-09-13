@@ -17,3 +17,6 @@ stylesheets.
 
 - The photo gallery is build using [Backbone](http://backbonejs.org) -
 relevant files are in content/scripts and view/layouts
+
+####Deploy
+- Deployments are handled via [git-ftp](https://github.com/git-ftp/git-ftp)
