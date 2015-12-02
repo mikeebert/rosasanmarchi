@@ -25,7 +25,8 @@ title: Resume
     <% end %>
   </table>
 
-  <% theater_roles = [["Finding Grafenberg","Tina","Trip Theatre Co., Chicago"],
+  <% theater_roles = [["Domesticated","Ensemble & U/S","Steppenwolf Theatre Company, Chicago"],
+                      ["Finding Grafenberg","Tina","Trip Theatre Co., Chicago"],
                       ["4Play","Rachel","The Den Theatre, Chicago"],
                       ["Emma","Almeda/Rose","New Suit Theatre Co., Chicago"],
                       ["Lift & Separate","Jane","Theater Wit, Chicago"],
@@ -60,29 +61,25 @@ title: Resume
       <td>Available Upon Request</td>
     </tr>
   </table>
-  <table class='training three-column'>
+  <table class='training two-column'>
     <tr>
       <th>Training</th>
     </tr>
 
-    <% trainings = [["Sean Bradley & David Murphy","On-Camera: Level 2","Green Room Studio, Chicago"],
-                    ["Conor Woods & Ian McLaren","Meisner: Level 2","Black Box Studio, Chicago"],
-                    ["Jack Bronis, Micah Philbrook","Improv","Second City, Chicago"],
-                    ["Claire Simon","Audition Workshop","Acting Studio, Chicago"],
-                    ["Erica Daniels & Adam Belcuore","Audition Workshop","Acting Studio, Chicago"],
-                    ["Kate Devore","Voice Workshop","Acting Studio, Chicago"],
-                    ["Darrell W. Cox","Advanced Scene Study","Profiles Theatre, Chicago"],
-                    ["Kurt Naebig","Monologue","Acting Studio, Chicago"],
-                    ["Matt Miller","On-Camera Workshop","Acting Studio, Chicago"],
-                    ["Cameron Thor","Scene Study","Carter Thor Studio, LA"],
-                    ["Alice Carter","On-Camera/Cold Reading","Carter Thor Studio, LA"],
-                    ["Carolyne Barry","Commercial","Carolyne Barry Entertainment, LA"]] %>
+    <% trainings = [
+                    ["School at Steppenwolf 2015:", ["Amy Morton, Audrey Francis, Darci Nalepa, Jon Berry, Robert Breuler, Alana Arenas, Tarell McCraney, Tim Hopper, Leah Karpel, Susan Messing, Michael Patrick Thornton, Kate Devore, Suzanne Thompson"]],
+                    ["Acting/Scene Study", ["Amy J. Carle – Vagabond School", "Conor Woods & Ian McLaren - Black Box Acting Studio", "Darrell W. Cox - Profiles Theatre", "Cameron Thor - Carter Thor Studio"]],
+                    ["On-Camera:", ["Sean Bradley, David Murphy, Matt Amador - Green Room Studio", "Matt Miller - Acting Studio Chicago", "Alice Carter - Carter Thor Studio"]],
+                    ["Audition Workshop", ["Claire Simon - Acting Studio Chicago", "Erica Daniels & Adam Belcuore - Acting Studio Chicago"]],
+                    ["Improv:", ["Jack Bronis & Micah Philbrook - Second City"]],
+                    ["Monologue:", ["Kurt Naebig - Acting Studio Chicago"]]
+                  ]
+    %>
 
-    <% trainings.each do |teacher, class_title, location| %>
+    <% trainings.each do |category, coachings| %>
       <tr>
-        <td><%= teacher %></td>
-        <td><%= class_title %></td>
-        <td><%= location %></td>
+        <td class="training-category"><%= category %></td>
+        <td class="right"><%= coachings.join('<br/>') %></td>
       </tr>
     <% end %>
   </table>
