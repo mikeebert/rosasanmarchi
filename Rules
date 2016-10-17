@@ -14,8 +14,12 @@
 #   because “*” matches zero or more characters.
 #
 
-{"stylesheets" => ".css",
- "scripts" => ".js"
+passthrough '/img/**/*'
+passthrough '/public/**/*'
+
+{
+  "stylesheets" => ".css",
+  "scripts" => ".js"
 }.each do |directory, extension|
   compile "/#{directory}/*/" do
     #don't filter or layout
