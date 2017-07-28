@@ -47,3 +47,6 @@ DEPENDENCIES
   adsf
   guard-nanoc
   nanoc
+
+BUNDLED WITH
+   1.10.3
