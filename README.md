@@ -16,9 +16,9 @@ The 'output' directory is a sub repo pushed to rosasanmarchi/rosasanmarchi.githu
 
 - Custom compile rules have been added to `Rules` for the `stylesheets`, `scrips`, `img` and `public` directories.
 
-**NOTE**: The files in the `output/fonts/` managed manually because the lightgallery plugin requires four font files that have the same base name but different extensions. Nanoc will not properly compile four files of the same name.
+**NOTE**: The files in the `output/fonts/` are managed manually because the lightgallery plugin requires four font files that have the same base name but different extensions. Nanoc will not properly compile four files of the same name.
 
-- The photo gallery is build using [Backbone](http://backbonejs.org) - relevant files are in content/scripts and view/layouts
+- The photo gallery was originally built using [Backbone](http://backbonejs.org) but was switched to lightgallery. See commit history and relevant files in content/scripts and view/layouts
 
 ####Deploy
 - Deployments are handled via [git-ftp](https://github.com/git-ftp/git-ftp)
